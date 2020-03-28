@@ -1,0 +1,17 @@
+<h1>
+  Your text is consist of
+  <!-- number of words-->
+  {{ total }} words
+</h1>
+
+<a href="{% url 'home' %}"> </a>
+<br />
+<h2>Text</h2>
+<!-- show text -->
+{{ fulltext }}
+
+<h2>words count</h2>
+<!-- words - numder of words -->
+{% for word, countTotal in dictionary %} {{ word }} - {{ countTotal }}
+<br />
+{% endfor %}
